@@ -70,7 +70,7 @@ To define a win condition:
 
 When the player (with the correct Tag) enters this area:
 
-- A script such as `ExitTrigger` or `PlayerWin` detects the event.
+- A script such as `ExitTrigger`  detects the event.
 - Debug messages can be printed to the Console (for testing).
 - The victory screen is shown.
 - Game time is stopped by setting `Time.timeScale = 0`, so the game is “frozen” at the moment of victory.
@@ -80,7 +80,7 @@ The player wins when they exit the maze through the dedicated exit area at the m
 
 ---
 
-## Victory Screen and Restart – `Canvas`, `PlayerWin`, `GameManager`
+## Victory Screen and Restart – `Canvas`, `ExitTrigger`, `GameManager`
 
 ### Canvas and Victory Panel
 
@@ -92,7 +92,7 @@ To show the player that they have won and allow them to start again:
 
 When the player enters the exit area:
 
-- The `ExitTrigger` / `PlayerWin` script activates the `winPanel`.
+- The `ExitTrigger` script activates the `winPanel`.
 - `Time.timeScale` is set to `0`, stopping movement and physics.
 
 ### `GameManager` – New Game Logic
@@ -175,5 +175,5 @@ In this 2D maze game:
 - `BoxCollider2D` on the player and the walls prevent passing through walls, so the player can move only inside the maze corridors.
 - The main camera is a child of the player and automatically follows them.
 - A single exit point, defined as a transparent trigger, serves as the win condition – when the player enters it, a victory screen appears.
-- A `Canvas`, together with `PlayerWin` / `ExitTrigger` and `GameManager`, handles showing the victory screen and starting a new game.
+- A `Canvas`, together with  `ExitTrigger` and `GameManager`, handles showing the victory screen and starting a new game.
 - A mini-map camera (`Camera_Mini_World`) displays the whole maze and adjusts its size and position for 16:9 and 9:16 using `MiniMapFitCamera` and `MiniMapViewportSwitcher`.
