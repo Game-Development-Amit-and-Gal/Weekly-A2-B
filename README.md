@@ -180,4 +180,4 @@ In this 2D maze game:
 
 
 ## Link to itoch.io:
-["Site:"](https://amit-and-gal.itch.io/2d-maze-game)
+[Game's Link](https://amit-and-gal.itch.io/2d-maze-game)
