@@ -177,3 +177,7 @@ In this 2D maze game:
 - A single exit point, defined as a transparent trigger, serves as the win condition – when the player enters it, a victory screen appears.
 - A `Canvas`, together with  `ExitTrigger` and `GameManager`, handles showing the victory screen and starting a new game.
 - A mini-map camera (`Camera_Mini_World`) displays the whole maze and adjusts its size and position for 16:9 and 9:16 using `MiniMapFitCamera` and `MiniMapViewportSwitcher`.
+
+
+## Link to itoch.io:
+["Site:"](https://amit-and-gal.itch.io/2d-maze-game)
