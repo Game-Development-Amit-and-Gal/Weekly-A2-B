@@ -5,7 +5,7 @@
 [RequireComponent(typeof(Camera))]
 public class KeepSameSizeOnRotate : MonoBehaviour
 {
-    [Tooltip("גודל המצלמה (orthographicSize) במצב ההתחלתי, למשל 16:9 Landscape")]
+  
     public float baseOrthoSize = 5f;
 
     private int baseScreenHeight;
